@@ -56,7 +56,14 @@ namespace GibberishClassification
                     vowels++;
                 }
             }
-            return (double)vowels / (double)total * 100;
+            if (total != 0)
+            {
+                return (double)vowels / (double)total * 100;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public static double DeviationScore(double percentage, double lowerBound, double upperBound)
