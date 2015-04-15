@@ -1,4 +1,4 @@
-# Gibberish Classification for .NET, written in C#
+# Gibberish Classification for .NET, written in C# #
 
 This repository contains the C# implementation of the following gibberish classification algorithm:
 
