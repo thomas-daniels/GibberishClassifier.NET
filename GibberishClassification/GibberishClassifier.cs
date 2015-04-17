@@ -93,6 +93,10 @@ namespace GibberishClassification
 
         public static double Classify(string text)
         {
+            if (String.IsNullOrEmpty(text))
+            {
+                return 0;
+            }
             double ucpcp = UniqueCharsPerChunkPercentage(text, 35);
             double vp = VowelsPercentage(text);
             double wtcr = WordToCharRatio(text);
